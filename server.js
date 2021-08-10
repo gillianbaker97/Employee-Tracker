@@ -1,17 +1,25 @@
 const mysql = require('mysql2');
-
 const PORT = process.env.PORT || 3001;
 
 
-// Connect to database
 const db = mysql.createConnection(
   {
     host: 'localhost',
-    // MySQL username,
     user: 'root',
-    // MySQL password
     password: '',
-    database: 'courses_db'
+    database: 'tracker_db'
   },
   console.log(`Connected to the courses_db database.`)
 );
+
+
+db.query('DELETE FROM employee WHERE id = ?', 16, (err, result) => {
+  if (err) {
+    console.log(err);
+  }
+  console.log(result);
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+})
