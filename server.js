@@ -20,6 +20,3 @@ db.query('DELETE FROM employee WHERE id = ?', 16, (err, result) => {
   console.log(result);
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-})
