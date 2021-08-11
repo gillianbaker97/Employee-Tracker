@@ -1,18 +1,17 @@
 {
   "name": "employee-tracker",
   "version": "1.0.0",
-  "description": "## Your Task",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose test/*",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gillianbaker97/Team-Profile-Generator.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "J Baker",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gillianbaker97/Team-Profile-Generator/issues"

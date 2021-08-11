@@ -1,10 +1,10 @@
-INSERT INTO department (id, dept_name)
+INSERT INTO department (id, dept_name)  /* the seeds give the tables their data */
 VALUES (1, "IT"),
         (2, "Development"),
         (3, "Design");
 
-INSERT INTO their_role (id, title, salary, department_id)
-VALUES (4, "Java Developer", "$60,000", 1),
+INSERT INTO their_role (id, title, salary, department_id)  /* this sets up the order of the tables' values */
+VALUES (4, "Java Developer", "$60,000", 1), /* this tells the tables' values what to be */
         (5, "HTML Developer", "$50,000", 1),
         (6, "CSS Developer", "$50,000", 1),
         (7, "Intern", "$10,000", 2),
